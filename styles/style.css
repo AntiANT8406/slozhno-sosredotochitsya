@@ -222,7 +222,7 @@
 
   .section {
     display: grid;
-    grid-template-columns: 100fr 206fr;
+    grid-template-columns: 100fr 204fr;
     grid-auto-rows: auto;
     gap: var(--section-gap, 20px);
   }
@@ -312,6 +312,10 @@
 
   .header__theme-menu-list {
     flex-direction: row;
+  }
+
+  .section {
+    grid-template-columns: 100fr 206fr;
   }
 
   .section_transparable {
