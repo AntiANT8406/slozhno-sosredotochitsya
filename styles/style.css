@@ -129,6 +129,7 @@
 .section__title {
   font-family: inherit;
   font-size: inherit;
+  color: var(--title-color,  #353430);
   font-weight: var(--title-font-weight, 700);
 }
 
@@ -167,7 +168,7 @@
   outline: none;
 }
 
-.section__article-link:focus {
+.section__article-link:focus-visible {
   outline: 1px solid currentColor;
 }
 
