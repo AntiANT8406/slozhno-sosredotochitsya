@@ -25,25 +25,25 @@
 .decorated-zone::before {
   position: absolute;
   content: "";
+  border-color: var(--title-color, #353430);
   inline-size: 25px;
   block-size: 25px;
   border-block-end: 1px solid var(--text-color, #353540);
   border-inline-start: 1px solid var(--text-color, #353540);
   inset-inline-start: var(--padding-size, 10px);
   inset-block-end: var(--padding-size, 10px);
-  border-color: var(--title-color, #353430);
 }
 
 .decorated-zone::after {
   position: absolute;
   content: "";
+  border-color: var(--title-color, #353430);
   inline-size: 25px;
   block-size: 25px;
   border-block-start: 1px solid var(--text-color, #353540);
   border-inline-end: 1px solid var(--text-color, #353540);
   inset-inline-end: var(--padding-size, 10px);
   inset-block-start: var(--padding-size, 10px);
-  border-color: var(--title-color, #353430);
 }
 
 .main-title {
@@ -134,6 +134,10 @@
   font-size: inherit;
   font-weight: var(--title-font-weight, 700);
   color: var(--title-color, #353430);
+}
+
+.section__title.second-title {
+  color: var(--accent-text-color, #353430);
 }
 
 .section__article {
