@@ -31,6 +31,7 @@
   border-inline-start: 1px solid var(--text-color, #353540);
   inset-inline-start: var(--padding-size, 10px);
   inset-block-end: var(--padding-size, 10px);
+  border-color: var(--title-color, #353430);
 }
 
 .decorated-zone::after {
@@ -42,6 +43,7 @@
   border-inline-end: 1px solid var(--text-color, #353540);
   inset-inline-end: var(--padding-size, 10px);
   inset-block-start: var(--padding-size, 10px);
+  border-color: var(--title-color, #353430);
 }
 
 .main-title {
@@ -76,6 +78,7 @@
   line-height: 1;
   text-align: center;
   text-transform: lowercase;
+  color: var(--menu-color, #353430);
   border: none;
   background: transparent;
   min-inline-size: 70px;
@@ -129,8 +132,8 @@
 .section__title {
   font-family: inherit;
   font-size: inherit;
-  color: var(--title-color,  #353430);
   font-weight: var(--title-font-weight, 700);
+  color: var(--title-color, #353430);
 }
 
 .section__article {

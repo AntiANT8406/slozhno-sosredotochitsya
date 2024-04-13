@@ -17,6 +17,7 @@
 }
 
 .theme_dark .header__rec {
+  color: var(--title-color, #ff0070);
   line-height: 1.39;
   position: absolute;
   display: flex;
