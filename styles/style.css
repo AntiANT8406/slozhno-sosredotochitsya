@@ -302,7 +302,6 @@
 @media (1024px <= width) {
   .page {
     --min-block-size: 768px;
-    /*--main-gap: 80px;*/
   }
 
   .header__theme-menu {
