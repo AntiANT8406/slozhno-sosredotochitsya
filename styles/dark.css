@@ -1,12 +1,7 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-.page.theme_dark {
+:root .theme_dark {
   color-scheme: dark;
   --menu-color: #ff0070;
+  --menu-hover-color: rgba(255, 0, 112, 0.4);
   --page-title-color: #db00ff;
   --page-title-shadow-color: #ff0070;
   --title-color: #ff0070;
@@ -17,31 +12,14 @@
 }
 
 .theme_dark .header__rec {
-  color: var(--title-color, #ff0070);
-  line-height: 1.39;
-  position: absolute;
   display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  gap: 10px;
-  inset-block-start: var(--padding-size);
-  inset-inline-end: calc(10px + var(--padding-size));
-}
-
-.theme_dark .header__rec::after {
-  display: inline-block;
-  content: "";
-  border-radius: 50%;
-  background-color: #ff0070;
-  box-shadow: 0 0 4px 4px #ff0070;
-  inline-size: 9px;
-  block-size: 9px;
 }
 
 @media (prefers-color-scheme: dark) {
-  .page {
+  :root {
     color-scheme: dark;
     --menu-color: #ff0070;
+    --menu-hover-color: rgba(255, 0, 112, 0.4);
     --page-title-color: #db00ff;
     --page-title-shadow-color: #ff0070;
     --title-color: #ff0070;
@@ -52,23 +30,6 @@
   }
 
   .header__rec {
-    line-height: 1.39;
-    position: absolute;
     display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    gap: 10px;
-    inset-block-start: var(--padding-size);
-    inset-inline-end: calc(10px + var(--padding-size));
-  }
-
-  .header__rec::after {
-    display: inline-block;
-    content: "";
-    border-radius: 50%;
-    background-color: #ff0070;
-    box-shadow: 0 0 4px 4px #ff0070;
-    inline-size: 9px;
-    block-size: 9px;
   }
 }
