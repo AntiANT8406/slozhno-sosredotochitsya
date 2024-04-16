@@ -90,10 +90,12 @@
 
 .header__theme-menu-button {
   line-height: 1;
+  transition: outline-color 500ms;;
   text-align: center;
   text-transform: lowercase;
   color: var(--menu-color, #353430);
   border: none;
+  outline-color: transparent;
   background: transparent;
   min-inline-size: 70px;
   min-block-size: 26px;
@@ -184,8 +186,11 @@
 }
 
 .section__article-link {
+  transition: border-block-end-color 500ms;
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-bakcground-color, #ff8dcb);
+  border-block-end-color: transparent;
+
 }
 
 .section__article-link:hover {
